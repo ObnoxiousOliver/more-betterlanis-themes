@@ -1,0 +1,52 @@
+// Titlebar
+
+.titlebar-component{
+  // border-top: #fff solid 1px;
+  height: 24px;
+  background: #808080;
+  margin-right: 1px;
+
+  .titlebar-controls{
+    margin-right: 2px;
+
+    .control {
+      width: 20px;
+      margin: 4px 3px;
+      height: unset;
+      background: $primary-background;
+      color: #000;
+      @include button-shadow;
+    
+      &:hover, &:active, &.btn-close:hover, &.btn-close:active{
+        opacity: 1;
+        color: #000;
+        background: $primary-background;
+      }
+    }
+  }
+
+  .titlebar-content {
+    color: #fff;
+
+    &::before {
+      content: none;
+    }
+
+    .title {
+      font-family: 'TheGoodMonolith', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      .logo-better, .logo-lanis {
+        color: inherit;
+        font-weight: 900;
+      }
+    }
+
+    .currentUser {
+      color: inherit;
+    }
+  }
+
+  &.window-focused {
+    background: #000083;
+  }
+}

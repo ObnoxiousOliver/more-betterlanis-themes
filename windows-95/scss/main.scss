@@ -1,0 +1,74 @@
+// Fonts
+@import url('http://fonts.cdnfonts.com/css/rosencrantz-nbp');
+@import url('http://fonts.cdnfonts.com/css/thegoodmonolith');
+
+$primary-background: var(--primary-background);
+$high-1: #fff;
+$shadow-1: #757575;
+$shadow-2: #000;
+
+@mixin button-shadow {
+  background: $primary-background;
+  // border: #fff solid 1px;
+  // border-color: #fff #000 #000 #fff;
+  box-shadow: 
+  $shadow-1 .5px .5px 0 .5px,
+  $high-1 0 0 0 1px,
+  $shadow-2 .5px .5px 0 1.5px;
+}
+
+:root {
+  --primary-background: #c3c3c3;
+  --secondary-background: #c3c3c3;
+  --tertiary-background: #c3c3c3;
+
+  --background-modifier-unfocused: #0003;
+  --background-modifier-selected: #0001;
+  --background-modifier-hover: #0002;
+  --background-modifier-active: #0003;
+
+  --popup-background: #fff;
+  --popup-foreground: #000;
+
+  --primary-foreground: #000;
+  --secondary-foreground: #333;
+  --muted-foreground: #555;
+
+  --warning: #fc4;
+  --warning-background: #221808;
+  --warning-foreground: #000;
+
+  --error: #f44;
+  --error-background: #220808;
+  --error-foreground: #fff;
+
+  --success: #6dd656;
+  --success-background: #10290a;
+  --success-foreground: #fff;
+
+  --button: #d7d7d7;
+  --button-foreground: #000;
+  --button-highlight: #222;
+  --button-highlight-foreground: #fff;
+
+  --scrollbar-track: #e5e5e5;
+  --scrollbar-thumb: #d1d1d1;
+
+  --elevation-high: none;
+  --elevation-medium: none;
+  --elevation-low: none;
+}
+
+#app-mount {
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+}
+
+:focus-visible {
+  outline: #000 dashed 1px;
+  outline-offset: -2px;
+}
+
+@import 'app';
+@import 'titlebar';
+@import 'panels';

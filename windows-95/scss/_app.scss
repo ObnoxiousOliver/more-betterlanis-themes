@@ -1,0 +1,11 @@
+// App
+
+.app {
+  padding: 2px;
+  box-shadow:
+    $primary-background 1px 1px inset,
+    $shadow-2 -1px -1px inset,
+    $high-1 2px 2px inset,
+    $shadow-1 -2px -2px inset,
+    ;
+}

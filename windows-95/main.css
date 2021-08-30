@@ -1,0 +1,149 @@
+@import url("http://fonts.cdnfonts.com/css/rosencrantz-nbp");
+@import url("http://fonts.cdnfonts.com/css/thegoodmonolith");
+:root {
+  --primary-background: #c3c3c3;
+  --secondary-background: #c3c3c3;
+  --tertiary-background: #c3c3c3;
+  --background-modifier-unfocused: #0003;
+  --background-modifier-selected: #0001;
+  --background-modifier-hover: #0002;
+  --background-modifier-active: #0003;
+  --popup-background: #fff;
+  --popup-foreground: #000;
+  --primary-foreground: #000;
+  --secondary-foreground: #333;
+  --muted-foreground: #555;
+  --warning: #fc4;
+  --warning-background: #221808;
+  --warning-foreground: #000;
+  --error: #f44;
+  --error-background: #220808;
+  --error-foreground: #fff;
+  --success: #6dd656;
+  --success-background: #10290a;
+  --success-foreground: #fff;
+  --button: #d7d7d7;
+  --button-foreground: #000;
+  --button-highlight: #222;
+  --button-highlight-foreground: #fff;
+  --scrollbar-track: #e5e5e5;
+  --scrollbar-thumb: #d1d1d1;
+  --elevation-high: none;
+  --elevation-medium: none;
+  --elevation-low: none;
+}
+
+#app-mount {
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+}
+
+:focus-visible {
+  outline: #000 dashed 1px;
+  outline-offset: -2px;
+}
+
+.app {
+  padding: 2px;
+  -webkit-box-shadow: var(--primary-background) 1px 1px inset, #000 -1px -1px inset, #fff 2px 2px inset, #757575 -2px -2px inset;
+          box-shadow: var(--primary-background) 1px 1px inset, #000 -1px -1px inset, #fff 2px 2px inset, #757575 -2px -2px inset;
+}
+
+.titlebar-component {
+  height: 24px;
+  background: #808080;
+  margin-right: 1px;
+}
+
+.titlebar-component .titlebar-controls {
+  margin-right: 2px;
+}
+
+.titlebar-component .titlebar-controls .control {
+  width: 20px;
+  margin: 4px 3px;
+  height: unset;
+  background: var(--primary-background);
+  color: #000;
+  background: var(--primary-background);
+  -webkit-box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+          box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+}
+
+.titlebar-component .titlebar-controls .control:hover, .titlebar-component .titlebar-controls .control:active, .titlebar-component .titlebar-controls .control.btn-close:hover, .titlebar-component .titlebar-controls .control.btn-close:active {
+  opacity: 1;
+  color: #000;
+  background: var(--primary-background);
+}
+
+.titlebar-component .titlebar-content {
+  color: #fff;
+}
+
+.titlebar-component .titlebar-content::before {
+  content: none;
+}
+
+.titlebar-component .titlebar-content .title {
+  font-family: 'TheGoodMonolith', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titlebar-component .titlebar-content .title .logo-better, .titlebar-component .titlebar-content .title .logo-lanis {
+  color: inherit;
+  font-weight: 900;
+}
+
+.titlebar-component .titlebar-content .currentUser {
+  color: inherit;
+}
+
+.titlebar-component.window-focused {
+  background: #000083;
+}
+
+.startmenu-component {
+  margin: 5px;
+  background: var(--primary-background);
+  -webkit-box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+          box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+}
+
+.start-view-component .start-menu-container .startmenu-component {
+  height: calc(100% - 10px);
+}
+
+.settings-panel-component {
+  top: 30px;
+  right: 7px;
+  bottom: 7px;
+  height: unset;
+  width: 290px;
+  padding: 10px 5px;
+  background: var(--primary-background);
+  -webkit-box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+          box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+}
+
+.card, .card.card-low {
+  border-radius: 0;
+  padding: 1px 0 0 1px;
+  background: var(--primary-background);
+  -webkit-box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+          box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+}
+
+.app-card-component .app-card-body {
+  border-radius: 0;
+  background: var(--primary-background);
+  -webkit-box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+          box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+}
+
+.modal-component .modal {
+  border-radius: 0;
+  padding: 1px 0 0 1px;
+  background: var(--primary-background);
+  -webkit-box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+          box-shadow: #757575 0.5px 0.5px 0 0.5px, #fff 0 0 0 1px, #000 0.5px 0.5px 0 1.5px;
+}
+/*# sourceMappingURL=main.css.map */

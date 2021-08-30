@@ -4,5 +4,5 @@
   "author": "ObnoxiousOliver",
   "css": "main.css",
   "icon": "icon.png",
-  "hidden"
+  "hidden": true
 }

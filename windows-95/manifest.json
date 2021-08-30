@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "author": "ObnoxiousOliver",
   "css": "main.css",
-  "icon": "icon.png"
+  "icon": "icon.png",
+  "hidden"
 }
